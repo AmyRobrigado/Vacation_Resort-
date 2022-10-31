@@ -51,7 +51,7 @@
         <div class="card">
             <img src="/images/RR-King-Bedroom.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title" id="selectKng">King</h5> <!-- selectKNG -->
+                <h5 class="card-title" id="selectKng">King</h5> <!-- selectKng -->
                 <div class="container-fluid">
                     <!-- Arrival -->
                     <div class="row">
@@ -60,15 +60,15 @@
                     </div>
                     <!-- Departure -->
                     <div class="row">
-                        <label for="arrivalDate">Departure</label>
-                        <input id="arrivalDate" class="form-control" type="date">
+                        <label for="departDate">Departure</label>
+                        <input id="departDate" class="form-control" type="date">
                     </div>
                     <!-- Guest Form -->
                     <div>
                         <label for="guest-number">Guests</label>
                         <form class="form-inline">
                             <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Adults</label>
-                            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                            <select class="custom-select my-1 mr-sm-2" id="guestNum1">
                                 <option selected>...</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -76,7 +76,7 @@
                                 <option value="4">4</option>
                             </select>
                             <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Children</label>
-                            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                            <select class="custom-select my-1 mr-sm-2" id="guestNum2">
                                 <option selected>...</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -86,14 +86,14 @@
                         </form>
                     </div>
                 </div>
-                <select class="form-select" aria-label="defaultSelect">
+                <select class="form-select" aria-label="defaultSelect" id="selectDis"><!--selectDis -->
                     <option selected>Discount</option>
                     <option value="0">None</option>
                     <option value="10%">AAA/Senior</option>
                     <option value="20%">Military</option>
                 </select>
                 <button type="button" class="btn btn-primary" data-bs-toggle="button" aria-pressed="false"
-                    autocomplete="off">Reserve</button>
+                    autocomplete="off" id="resBtn">Reserve</button><!-- resBtn -->
             </div>
         </div>
         <div class="card">
@@ -107,14 +107,14 @@
                 </div>
                 <!-- Departure -->
                 <div class="row">
-                    <label for="arrivalDate">Departure</label>
-                    <input id="arrivalDate" class="form-control" type="date">
+                    <label for="departDate">Departure</label>
+                    <input id="departDate" class="form-control" type="date">
                 </div>
                 <div>
                     <label for="guest-number">Guests</label>
                     <form class="form-inline">
                         <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Adults</label>
-                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                        <select class="custom-select my-1 mr-sm-2" id="guestNum1">
                             <option selected>...</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -122,7 +122,7 @@
                             <option value="4">4</option>
                         </select>
                         <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Children</label>
-                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                        <select class="custom-select my-1 mr-sm-2" id="guestNum2">
                             <option selected>...</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -131,35 +131,35 @@
                         </select>
                     </form>
                 </div>
-                <select class="form-select" aria-label="defaultSelect">
+                <select class="form-select" aria-label="defaultSelect" id="selectDis"><!-- selectDis -->
                     <option selected>Discount</option>
                     <option value="0">None</option>
                     <option value="10%">AAA/Senior</option>
                     <option value="20%">Military</option>
                 </select>
                 <button type="button" class="btn btn-primary" data-bs-toggle="button" aria-pressed="false"
-                    autocomplete="off">Reserve</button>
+                    autocomplete="off" id="resBtn">Reserve</button><!-- resBtn -->
             </div>
         </div>
         <div class="card">
             <img src="/images/RR-Standard-2-Queen.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title" id="select2-B">2-Bed</h5> <!-- select2-B -->
+                <h5 class="card-title" id="select2B">2-Bed</h5> <!-- select2B -->
                 <!-- Arrival -->
                 <div class="row">
                     <label for="arrivalDate">Arrival</label>
-                    <input id="arrivalDate" class="form-control" type="date">
+                    <input id="arrivalDate" class="form-control" type="date"><!-- arrivalDate -->
                 </div>
                 <!-- Departure -->
                 <div class="row">
-                    <label for="arrivalDate">Departure</label>
-                    <input id="arrivalDate" class="form-control" type="date">
+                    <label for="departDate">Departure</label>
+                    <input id="departDate" class="form-control" type="date"><!-- departDate -->
                 </div>
                 <div>
                     <label for="guest-number">Guests</label>
                     <form class="form-inline">
                         <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Adults</label>
-                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                        <select class="custom-select my-1 mr-sm-2" id="guestNum1">
                             <option selected>...</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -167,7 +167,7 @@
                             <option value="4">4</option>
                         </select>
                         <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Children</label>
-                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                        <select class="custom-select my-1 mr-sm-2" id="guestNum2">
                             <option selected>...</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -176,14 +176,14 @@
                         </select>
                     </form>
                 </div>
-                <select class="form-select" aria-label="defaultSelect">
+                <select class="form-select" aria-label="defaultSelect" id="selectDis"><!--selectDis -->
                     <option selected>Discount</option>
                     <option value="0">None</option>
                     <option value="10%">AAA/Senior</option>
                     <option value="20%">Military</option>
                 </select>
                 <button type="button" class="btn btn-primary" data-bs-toggle="button" aria-pressed="false"
-                    autocomplete="off">Reserve</button>
+                    autocomplete="off" id="resBtn">Reserve</button><!-- resBtn -->
             </div>
         </div>
     </div>
